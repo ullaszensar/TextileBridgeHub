@@ -24,48 +24,55 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <Link href="/">
-              <h1 className="text-primary font-roboto font-bold text-2xl cursor-pointer">
-                <span className="text-secondary">Tex</span>Bridge
-              </h1>
+              <div className="flex items-center cursor-pointer">
+                {/* Logo Image */}
+                <div className="w-10 h-10 mr-2 flex items-center justify-center bg-primary rounded-md">
+                  <span className="text-white font-bold text-xl">TB</span>
+                </div>
+                {/* Logo Text */}
+                <h1 className="text-primary font-roboto font-bold text-2xl">
+                  <span className="text-secondary">Tex</span>Bridge
+                </h1>
+              </div>
             </Link>
           </div>
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             <Link href="/">
-              <a className={`nav-link font-medium hover:text-secondary transition-300 py-2 ${
+              <span className={`nav-link font-medium hover:text-secondary transition-300 py-2 cursor-pointer ${
                 isActive('/') ? 'text-primary' : 'text-neutral-700'
               }`}>
                 Home
-              </a>
+              </span>
             </Link>
             <Link href="/about">
-              <a className={`nav-link font-medium hover:text-secondary transition-300 py-2 ${
+              <span className={`nav-link font-medium hover:text-secondary transition-300 py-2 cursor-pointer ${
                 isActive('/about') ? 'text-primary' : 'text-neutral-700'
               }`}>
                 About Us
-              </a>
+              </span>
             </Link>
             <Link href="/services">
-              <a className={`nav-link font-medium hover:text-secondary transition-300 py-2 ${
+              <span className={`nav-link font-medium hover:text-secondary transition-300 py-2 cursor-pointer ${
                 isActive('/services') ? 'text-primary' : 'text-neutral-700'
               }`}>
                 Services
-              </a>
+              </span>
             </Link>
             <Link href="/products">
-              <a className={`nav-link font-medium hover:text-secondary transition-300 py-2 ${
+              <span className={`nav-link font-medium hover:text-secondary transition-300 py-2 cursor-pointer ${
                 isActive('/products') ? 'text-primary' : 'text-neutral-700'
               }`}>
                 Products
-              </a>
+              </span>
             </Link>
             <Link href="/contact">
-              <a className={`nav-link font-medium hover:text-secondary transition-300 py-2 ${
+              <span className={`nav-link font-medium hover:text-secondary transition-300 py-2 cursor-pointer ${
                 isActive('/contact') ? 'text-primary' : 'text-neutral-700'
               }`}>
                 Contact
-              </a>
+              </span>
             </Link>
           </nav>
           
@@ -94,54 +101,54 @@ const Header = () => {
           <div className="md:hidden pb-4">
             <div className="flex flex-col space-y-3">
               <Link href="/">
-                <a 
+                <span 
                   onClick={closeMenu}
-                  className={`mobile-nav-link font-medium hover:bg-neutral-100 px-3 py-2 rounded-md ${
+                  className={`mobile-nav-link font-medium hover:bg-neutral-100 px-3 py-2 rounded-md block cursor-pointer ${
                     isActive('/') ? 'text-primary' : 'text-neutral-700'
                   }`}
                 >
                   Home
-                </a>
+                </span>
               </Link>
               <Link href="/about">
-                <a 
+                <span
                   onClick={closeMenu}
-                  className={`mobile-nav-link font-medium hover:bg-neutral-100 px-3 py-2 rounded-md ${
+                  className={`mobile-nav-link font-medium hover:bg-neutral-100 px-3 py-2 rounded-md block cursor-pointer ${
                     isActive('/about') ? 'text-primary' : 'text-neutral-700'
                   }`}
                 >
                   About Us
-                </a>
+                </span>
               </Link>
               <Link href="/services">
-                <a 
+                <span
                   onClick={closeMenu}
-                  className={`mobile-nav-link font-medium hover:bg-neutral-100 px-3 py-2 rounded-md ${
+                  className={`mobile-nav-link font-medium hover:bg-neutral-100 px-3 py-2 rounded-md block cursor-pointer ${
                     isActive('/services') ? 'text-primary' : 'text-neutral-700'
                   }`}
                 >
                   Services
-                </a>
+                </span>
               </Link>
               <Link href="/products">
-                <a 
+                <span
                   onClick={closeMenu}
-                  className={`mobile-nav-link font-medium hover:bg-neutral-100 px-3 py-2 rounded-md ${
+                  className={`mobile-nav-link font-medium hover:bg-neutral-100 px-3 py-2 rounded-md block cursor-pointer ${
                     isActive('/products') ? 'text-primary' : 'text-neutral-700'
                   }`}
                 >
                   Products
-                </a>
+                </span>
               </Link>
               <Link href="/contact">
-                <a 
+                <span
                   onClick={closeMenu}
-                  className={`mobile-nav-link font-medium hover:bg-neutral-100 px-3 py-2 rounded-md ${
+                  className={`mobile-nav-link font-medium hover:bg-neutral-100 px-3 py-2 rounded-md block cursor-pointer ${
                     isActive('/contact') ? 'text-primary' : 'text-neutral-700'
                   }`}
                 >
                   Contact
-                </a>
+                </span>
               </Link>
             </div>
           </div>
